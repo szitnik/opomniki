@@ -18,3 +18,13 @@ window.addEventListener('load', function() {
 	setInterval(posodobiOpomnike, 1000);
 	
 });
+
+var izvediPrijavo = function(event){
+		
+		var uporabnikIme=document.querySelector("#uporabnisko_ime").value
+		document.getElementById("uporabnik").innerHTML = uporabnikIme;
+		document.querySelector(".pokrivalo").style.display = "none";
+		
+	}
+	document.querySelector("#prijavniGumb").addEventListener('click',izvediPrijavo);
+	
